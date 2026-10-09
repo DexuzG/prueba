@@ -1,0 +1,264 @@
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+
+    <div class="header-container">
+
+        <div class="header-logo">
+
+            <img class="logo-uabc" src="https://fca.tij.uabc.mx/web/image/website/1/logo/FCA%20Tijuana?unique=9451482" alt="">
+
+    
+        </div>
+
+        <div class="header-right">
+
+            <div class="search-container">
+                <input class="search-input" type="search" placeholder="Buscar...">
+            </div>
+
+            <a class="login-button" href="#">Iniciar sesión</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="page-container">
+
+        <div class="sidebar-container">
+
+            <a class="sidebar-item active" href="#">
+                <span>Home</span>
+            </a>
+
+            <a class="sidebar-item" href="#">
+                <span>FCA</span>
+            </a>
+
+            <a class="sidebar-item" href="#">
+                <span>Ofertas</span>
+                <span>⌄</span>
+            </a>
+
+            <a class="sidebar-item" href="#">
+                <span>Estudiantes</span>
+                <span>⌄</span>
+            </a>
+
+            <a class="sidebar-item" href="#">
+                <span>Profesores</span>
+                <span>⌄</span>
+            </a>
+
+            <a class="sidebar-item" href="#">
+                <span>Investigación</span>
+                <span>⌄</span>
+            </a>
+
+            <a class="sidebar-item" href="#">
+                <span>Búsqueda</span>
+            </a>
+
+        </div>
+
+
+        <div class="content-container">
+
+            <div class="hero-container">
+
+                <img class="hero-img" src="https://www.uabc.mx/wp-content/uploads/2025/03/1-2.jpg" alt="">
+
+                <div class="hero-text-container">
+
+                    <p class="hero-small">FACULTAD DE</p>
+
+                    <h1 class="hero-title">CONTADURÍA Y<br>ADMINISTRACIÓN</h1>
+
+                    <p class="hero-subtitle">Formando líderes con visión global,<br>ética y compromiso social.</p>
+
+                    <a class="hero-button" href="#">Conoce más →</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="section-header featured-header">
+                <h2 class="section-title">Noticias recientes</h2>
+            </div>
+
+            <div class="featured-container">
+
+                <div class="featured-grid">
+
+                    <div class="small-card">
+                        <img class="small-card-img" src="https://gaceta.uabc.mx/sites/default/files/styles/max_1300x1300/public/notas/2026-09-11/Meritus-Flyer.jpeg?itok=uVaZBxzx" alt="">
+                        <div class="small-card-text">
+                            <h3>Convocatoria Meritus 2026</h3>
+                            <p>03 de noviembre, 2026</p>
+                        </div>
+                        <span class="green-circle">→</span>
+                    </div>
+
+                    <div class="small-card">
+                        <img class="small-card-img" src="https://gaceta.uabc.mx/sites/default/files/styles/max_1300x1300/public/galerias/2017-09/Cumple%2056%20a%C3%B1os%20la%20Facultad%20de%20Contadur%C3%ADa%20y%20Administraci%C3%B3n01.jpg?itok=mbD0xChr" alt="">
+                        <div class="small-card-text">
+                            <h3>65 Aniversario FCA</h3>
+                            <p>21 de septiembre, 2026</p>
+                        </div>
+                        <span class="green-circle">→</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="info-container">
+
+                <div class="events-container">
+
+                    <div class="section-header">
+                        <h2 class="section-title">Próximos eventos</h2>
+                        <a class="section-button" href="#">Ver todos →</a>
+                    </div>
+
+                    <div class="carousel">
+
+                        <div class="carousel-viewport">
+                            <div class="carousel-track" id="eventsTrack">
+
+                                <div class="event-card">
+                                    <img class="event-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWoZPKcd2ZmOGZF9LS_Ps8qe4FuoT1fnY5LJEmyT26u3GsPKUI6nMERkw&s=10" alt="">
+                                    <div class="event-date"><strong>21</strong><span>SEP</span></div>
+                                    <h3>65 Aniversario FCA</h3>
+                                    <p>Teatro Universitario Rubén Vizcaíno Valencia</p>
+                                    <p>10:00 a.m.</p>
+                                </div>
+
+                                <div class="event-card">
+                                    <img class="event-img" src="{{ url_for('static', filename='img/talentos.jpg') }}" alt="">
+                                    <div class="event-date"><strong>22</strong><span>SEP</span></div>
+                                    <h3>Show de Talentos</h3>
+                                    <p>Explanada FCA</p>
+                                    <p>6:00 p.m.</p>
+                                </div>
+
+                                <div class="event-card">
+                                    <img class="event-img" src="{{ url_for('static', filename='img/pastel.jpg') }}" alt="">
+                                    <div class="event-date"><strong>24</strong><span>SEP</span></div>
+                                    <h3>Corte de Pastel Tradicional</h3>
+                                    <p>Plaza Central de la FCA</p>
+                                    <p>11:00 a.m.</p>
+                                </div>
+
+                                <div class="event-card">
+                                    <img class="event-img" src="{{ url_for('static', filename='img/meritus.jpg') }}" alt="">
+                                    <div class="event-date"><strong>03</strong><span>NOV</span></div>
+                                    <h3>Meritus 2026</h3>
+                                    <p>Modalidad en línea</p>
+                                    <p>9:00 a.m.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <button class="carousel-btn carousel-prev" id="eventsPrev" type="button" aria-label="Anterior">‹</button>
+                        <button class="carousel-btn carousel-next" id="eventsNext" type="button" aria-label="Siguiente">›</button>
+
+                        <div class="carousel-dots" id="eventsDots"></div>
+
+                    </div>
+
+                </div>
+
+
+                
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="accreditations-container">
+
+        <h2 class="accreditations-title">Acreditaciones</h2>
+
+        <p class="accreditations-text">La calidad de nuestros programas está respaldada por certificaciones nacionales e internacionales.</p>
+
+        <div class="accreditations-logos">
+
+            <img class="accreditation-img" src="{{ url_for('static', filename='img/acbsp.png') }}" alt="">
+
+            <img class="accreditation-img" src="{{ url_for('static', filename='img/conahcyt.png') }}" alt="">
+
+            <img class="accreditation-img" src="{{ url_for('static', filename='img/caceca.png') }}" alt="">
+
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+
+                <img class="footer-logo" src="{{ url_for('static', filename='img/logo-uabc.png') }}" alt="">
+
+                <div>
+                    <h3>Facultad de Contaduría y Administración</h3>
+                    <p>UABC - Campus Tijuana</p>
+                </div>
+
+            </div>
+
+            <div class="footer-column">
+                <h3>FCA</h3>
+            </div>
+
+            <div class="footer-column">
+                <h3>Estudiantes</h3>
+            </div>
+
+            <div class="footer-column">
+                <h3>Profesores</h3>
+            </div>
+
+            <div class="footer-column">
+                <h3>Institucional</h3>
+            </div>
+
+            <div class="footer-social">
+                <a href="#">f</a>
+                <a href="#">ig</a>
+                <a href="#">tt</a>
+                <a href="#">yt</a>
+                <a href="#">in</a>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>Calzada Universidad 14418, Mesa de Otay, Tijuana, B.C., México, C.P. 22427</p>
+
+            <div class="footer-phone">
+                <p>+52 (664) 979-7500<br>Línea universitaria</p>
+                <p>+52 (664) 683-3174<br>Atención directa FCA</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
